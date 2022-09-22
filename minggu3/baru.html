@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mutlimedia HTML 5</title>
+</head>
+<body>
+    <h2>HTML 5 - Mengolah file Mutlimedia</h2><br>
+	<button onclick="playvid()">play</button>
+	<button onclick="pausevid()">pause</button>
+	<button onclick="durationvid()" type="button">video duration</button>
+    <button onclick="enableControls()" type="button">enable contols</button> 
+	<button onclick="disableControls()" type="button">disabled contols</button>
+	<button onclick="checkControls()" type="button">check contols status</button>
+	<br> 
+	<video width="420" id="myvideo">
+	    <source src="mov_bbb.mp4" type="video/mp4">
+	</video>
+
+</body>
+<script> 
+    var vid = document.getElementById("myvideo"); 
+	
+	function enableControls() { 
+        vid.controls = true;
+        vid.load();
+    } 
+
+    function disableControls() { 
+        vid.controls = false;
+        vid.load();
+    } 
+
+    function checkControls() { 
+        alert(vid.controls);
+    } 
+
+    function playvid() { 
+        vid.play();
+    } 
+    function pausevid() { 
+        vid.pause();
+    } 
+	function durationvid() { 
+         alert(vid.duration);
+    } 
+</script>
+</html>
