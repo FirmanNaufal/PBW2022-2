@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    padding: 35px;
+    text-align: center;
+    background-color: brown;
+    border: 2px solid green;
+    color:white;
+}
+
+nav{
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+nav ul{
+    list-style-type: none;
+    padding: 8px;
+    border: 2px solid green;
+    background-color: aqua;
+    margin-top: 0px;
+}
+
+nav ul li a{
+    display: block;
+    color: rgb(12, 199, 105);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: aqua;
+    color: white;
+}
+article{
+    float: left;
+    width: 80%;
+    padding:0 2px;
+    border: 2px solid green;
+}
+.satu{
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dua{
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer{
+    text-align: center;
+}

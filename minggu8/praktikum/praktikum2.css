@@ -1,0 +1,14 @@
+p { 
+    font-family: serif; 
+    line-height: 1.75em; 
+} 
+ 
+i { 
+    font-family: sans; 
+    color: orange; 
+} 
+ 
+h2 { 
+    font-family: sans; 
+    color: rgb(250, 0, 0);
+}
