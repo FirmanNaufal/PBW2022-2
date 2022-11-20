@@ -1,0 +1,62 @@
+body {
+    background: #1c53c1;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+}
+
+.ketengah {
+    margin: 10px auto;
+    width: 1150px;
+}
+
+.kotak {
+    background: blue;
+    width: 500px;
+    float: left;
+    height: 250px;
+    margin: 30px;
+}
+
+.gradient1 {
+    background: linear-gradient(red, green);
+    
+    background: -webkit-linear-gradient(red, green);
+    
+    background: -o-linear-gradient(red, green);
+    
+    background: -moz-linear-gradient(red, green);  
+}
+
+.gradient2 {
+    background: linear-gradient(to right, red, yellow, green);
+    
+    background: -webkit-linear-gradient(left, red, yellow, green);
+    
+    background: -o-linear-gradient(right, red, yellow, green);
+    
+    background: -moz-linear-gradient(right, red, yellow, green);   
+}
+
+.gradient3 {
+    background: radial-gradient(red, yellow, green);
+    
+    background: -webkit-radial-gradient(red, yellow, green);
+    
+    background: -o-radial-gradient(red, yellow, green);
+    
+    background: -moz-radial-gradient(red, yellow, green);
+}
+
+.gradient4 {
+    background: radial-gradient(circle, red, yellow, green);
+    
+    background: -webkit-radial-gradient(circle, red, yellow, green);
+    
+    background: -o-radial-gradient(circle, red, yellow, green);
+    
+    background: -moz-radial-gradient(circle, red, yellow, green);   
+}
