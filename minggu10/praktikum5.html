@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Variabel JavaScript</title>
+  </head>
+  <body>
+    <h1>Belajar Variabel JavaScript</h1>
+    <script>
+      //membuat variabel
+      var name = "web belajar kode";
+      var visitorCount = 1000;
+      var isActive = true;
+      var url = "http://dinus.ac.id";
+
+      //menampilkan variabel di jendela dialog (Alert)
+      alert("Selamat datang di " + name);
+
+      //menampilkan variabel di HTML
+      document.write("Nama situs: " + name + "<br>");
+      document.write("Jumlah pengunjung: " + visitorCount + "<br>");
+      document.write("Status aktif: " + isActive + "<br>");
+      document.write("Alamat URL: " + url + "<br>");
+
+      //menghapus variabel : Penghapusan variabel hanya bisa dilakukan pada variabel yang dibuat tanpa awalan
+      bookTitle = "The Man";
+      delete bookTitle;
+
+      //tipe data
+      var name = "dian";
+      var age = 18;
+      var single = true;
+
+      console.log(typeof name);
+      console.log(typeof age);
+      console.log(typeof single);
+    </script>
+  </body>
+</html>

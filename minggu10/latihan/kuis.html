@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kuis JavaScript</title>
+    <script>
+        function hitung(){
+            var form = document.formHitung;
+            var x = eval(form.bil1.value);
+            var y = eval(form.bil2.value);
+            var pil = form.opr.value;
+            
+            if(pil == '+'){
+               var z = x+y
+            }
+            else if(pil == '-'){
+               var z = x-y
+            }
+            else if(pil == '*'){
+                var z = x*y
+            }
+            else if (pil == '/'){
+                var z = x/y
+            }
+            form.hasil.value = z;
+        }
+    </script>
+</head>
+<body>
+    <h1>Belajar JavaScript</h1>
+    <form name="formHitung" action="#">
+        bil1 <input type="number" name="bil1"><br>
+        opr
+        <select name="opr">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select> <br>
+        bil2 <input type="number" name="bil2"><br>
+        <input type="button" value="=" onclick="hitung()">
+        <input type="number" name="hasil" disabled>
+    </form>
+</body>
+</html>
