@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Array Perulangan</title>
+</head>
+
+<body>
+    <script>
+        var products = ["senter", "baterai", "kaca"];
+        var i;
+        for (i = 0; i < products.length; i++) {
+            document.write(i + 1 + ". " + products[i] + "<br>");
+        }
+
+        document.write("<br>");
+
+        var mhs = ["Firman", "Syifa", "Budi", "Juna"];
+        var j;
+        for (j = 0; j < mhs.length; j++) {
+            document.write(j + 1 + ". " + mhs[j] + "<br>");
+        }
+
+        document.write("<br>");
+
+        var mhs = ["Firman", "Syifa", "Budi", "Juna"];
+        var j;
+        for (j = 0; j < mhs.length; j++) {
+            document.write("<li>" + mhs[j] + "<br>");
+        }
+
+        document.write("<br>");
+        //using foreach
+        var mhs = ["Firman", "Syifa", "Budi", "Juna"];
+        mhs.forEach(function (dataMhs) {
+            document.write("<li>" + dataMhs);
+        });
+    </script>
+</body>
+
+</html>

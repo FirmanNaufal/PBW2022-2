@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Percabangan switch/case</title>
+  </head>
+  <body>
+    <script>
+      var jawab = prompt("pilih hadiahmu (1-5)");
+      hadiah = "";
+      switch (jawab) {
+        case "1":
+          hadiah = "Tv";
+          break;
+        case "2":
+          hadiah = "Sepatu";
+          break;
+        case "3":
+          hadiah = "Kipas";
+          break;
+        case "4":
+          hadiah = "Handphone";
+          break;
+        case "5":
+          hadiah = "Emas";
+          break;
+        default:
+          document.write("input yang anda masukkan salah <br>");
+      }
+      if (hadiah === "") {
+        document.write("kamu tidak dapat hadiah");
+      } else {
+        document.write("kamu dapat hadiah " + hadiah);
+      }
+    </script>
+  </body>
+</html>

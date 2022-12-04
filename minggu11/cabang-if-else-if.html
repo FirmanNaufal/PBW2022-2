@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Percabangan if/else/if</title>
+  </head>
+  <body>
+    <script>
+      var nilai = prompt("input nilai");
+      var huruf = "";
+
+      if (nilai >= 90) huruf = "A";
+      else if (nilai >= 80) huruf = "B+";
+      else if (nilai >= 70) huruf = "B";
+      else if (nilai >= 60) huruf = "C";
+      else if (nilai >= 50) huruf = "C+";
+      else if (nilai >= 30) huruf = "E";
+      else huruf = "F";
+      document.write("nilai anda " + nilai + " (" + huruf + ")");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Perulangan Nested V2</title>
+  </head>
+  <body>
+    <script>
+      var ulang = confirm("mau menambah bintang pencet ok");
+      var i = 0;
+      while (ulang) {
+        i++;
+        var bintang = "*".repeat(i) + "<br>";
+        document.write("perulangan ke-" + i + "\t" + bintang);
+        ulang = confirm("mau menambah bintang lagi?");
+      }
+    </script>
+  </body>
+</html>

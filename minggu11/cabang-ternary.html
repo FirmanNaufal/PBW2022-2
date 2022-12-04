@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Percabangan Ternary</title>
+  </head>
+  <body>
+    <script>
+      var tanya = true;
+      while (tanya) {
+        var jwb = prompt("apakah jakarta ibu kota indonesia? (y/t)");
+        var jwban = jwb == "y" ? "benar" : "salah";
+        alert("jawaban anda " + jwban);
+        tanya = confirm("ulangi?");
+      }
+    </script>
+  </body>
+</html>

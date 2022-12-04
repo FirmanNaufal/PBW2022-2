@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Perulangan While</title>
+  </head>
+  <body>
+    <script>
+      var ulang = confirm("apa mau mengulang?");
+      var counter = 0;
+      while (ulang) {
+        counter++;
+        ulang = confirm("perulangan " + counter + "x, ulang lagi?");
+      }
+      alert("perulangan sudah dilakukan sebanyak " + counter + " kali");
+    </script>
+  </body>
+</html>

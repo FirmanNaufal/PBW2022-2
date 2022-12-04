@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Array Contoh Method</title>
+  </head>
+  <body>
+    <!-- 
+      • Method filter() : Menyaring data dari array
+      • Method includes() : Mengecek apakah data ada dalam array
+      • Method sort() : Mengurutkan data array
+     -->
+    <script>
+      // filter()
+      //array.filter(function(currentValue, index, arr), thisValue)
+      document.write("filter <br>");
+      var num = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+      var result = num.filter((item) => item % 2 == 1);
+      document.write(result + "<br><br>");
+
+      //includes()
+      document.write("includes <br> ");
+      var inc1 = num.includes(1); //true
+      document.write(inc1 + "<br>");
+      var inc2 = num.includes(10); //false
+      document.write(inc2 + "<br><br>");
+
+      //sort()
+      document.write("sort <br> ");
+      var huruf = ["s", "d", "l", "a", "t"];
+      var angka = [2, 4, 7, 1, 0];
+      document.write(huruf.sort() + "<br>");
+      document.write(angka.sort());
+    </script>
+  </body>
+</html>

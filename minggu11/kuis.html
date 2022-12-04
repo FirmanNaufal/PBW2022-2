@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kuis HTML</title>
+    <script>
+            var apl = new function(){
+                this.el = document.getElementById('mhs');
+                this.mhs = ['Budi','Juna','Raisa'];
+    
+                    this.barisAll = function(){
+                        var data = '';
+                        if (this.mhs.length>0){
+                            for (i=0; i<this.mhs.length; i++){
+                                data += '<tr>';
+                                data += '<td>' + this.mhs[i] + '</td>'
+                                data += '</tr>';
+                            }
+                        }
+                        return this.el.innerHTML = data;
+                    };
+                }
+            apl.barisAll();
+        </script>
+</head>
+<body>
+    <h2>Data Mahasiswa PBW 2022</h2>
+    <form method="POST" action="javascript:void(0)" onsubmit="apl.add()">
+        <input type="text" placeholder="Input nama mahasiswa" id="tambahNama">
+        <input type="submit" value="+">
+    </form>
+    <div id="counter">
+        <!-- data dinamis dari js -->
+    </div>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>Daftar Nama</td>
+            </tr>
+        </thead>
+        <tbody id="mhs">
+            <!-- data dinamis dari js -->
+
+        </tbody>
+    </table>
+</body>
+</html>
