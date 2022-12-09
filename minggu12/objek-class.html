@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Object JavaScript</title>
+  </head>
+  <body>
+    <script>
+      function Person(firstName, lastName) {
+        // properti
+        this.firstName = firstName;
+        this.lastName = lastName;
+        // method
+        this.fullName = function () {
+          return `${this.firstName} ${this.lastName}`;
+        };
+        this.showName = function () {
+          document.write(this.fullName());
+        };
+      }
+      var person1 = new Person("Firman Naufal", "Aryaputra");
+      person1.showName();
+      document.write("<br><br>");
+
+      function Mahasiswa(nama, nisn, jurusan) {
+        //properti
+        this.nama = nama;
+        this.nisn = nisn;
+        this.jurusan = jurusan;
+
+        //method
+        this.data = function () {
+          return `${this.nama} ${this.nisn} ${this.jurusan}`;
+        };
+
+        this.tampil = function () {
+          document.write(this.data());
+        };
+      }
+      var mhs = new Mahasiswa(
+        "Firman<br>",
+        "A11.2022.14181<br>",
+        "Teknik Informatika<br>"
+      );
+      console.log(mhs);
+      mhs.tampil();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM API JavaScript</title>
+</head>
+<body>
+    <p class="paragraf">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    <p class="paragraf">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    <p class="paragraf">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+
+    <script>
+    var p = document.getElementsByClassName('paragraf')
+    setInterval(function() {
+        p[0].style.color = 'red'
+        p[1].style.color = 'green'
+        p[2].style.color = 'blue'
+
+        setTimeout (function () {
+        p[0].style.color = 'black'
+        p[1].style.color = 'black'
+        p[2].style.color = 'black'
+        }, 500)
+    }, 1000)
+    </script>
+</body>
+</html>
