@@ -1,0 +1,20 @@
+{
+  "login": "belajarkode",
+  "id": 12345678,
+  "node_id": "MDEyOk9yZ2FuaXphdGlvbjE2MjU0NjAy",
+  "avatar_url": "code.png",
+  "gravatar_id": "",
+  "url": "http://devel.dinustech.com/aboe/materi/data/kode.json",
+  "type": "Study",
+  "site_admin": false,
+  "name": "Belajar Kode",
+  "company": null,
+  "location": "Semarang, Indonesia",
+  "email": "masaboe@dinustek.com",
+  "hireable": null,
+  "bio": null,
+  "followers": 0,
+  "following": 0,
+  "created_at": "2020-12-23T07:00:00Z",
+  "updated_at": "2020-12-23T07:00:00Z"
+}

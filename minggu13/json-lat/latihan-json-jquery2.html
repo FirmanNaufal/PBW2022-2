@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Json x JQuery</title>
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      $.getJSON("data.json", function (result) {
+        console.log(result);
+        $.each(result, function (i) {
+          document.getElementById("demo").innerHTML +=
+            "NIM :" +
+            result[i].nim +
+            "<br>Nama :" +
+            result[i].nama +
+            "<br>Alamat :" +
+            result[i].alamat +
+            "<br><br>";
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="demo"></div>
+  </body>
+</html>
